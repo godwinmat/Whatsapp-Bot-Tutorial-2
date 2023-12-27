@@ -26,7 +26,7 @@ const messages = async (req, res) => {
         messageId: message_id
       };
 
-      // Check if the type of message is text, radio button click or simple button click
+      // Check if the type of message is text, radio button click or simple button
       if (typeOfMsg === "text_message") {
         const response = await handleTextMessages(messageInfo);
         replyMessageId = response;
